@@ -1,19 +1,22 @@
-name: CI
-
 on:
   push:
     branches:
-    - main
+      - master
   pull_request:
-    branches:
-    - main
-  workflow_dispatch:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  update_release_draft:
+    permissions:
+      contents: write
+      pull-requests: write
+      
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - uses: release-drafter/release-drafter@v5.21.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
