@@ -6,3 +6,6 @@ one
 
 # feature 2
 two
+
+# feature 3
+three
