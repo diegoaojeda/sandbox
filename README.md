@@ -1,14 +1,18 @@
 # sandbox
-Just a sandbox to test out stuff
+Just a sandbox to test out stuff.
 
-# feature 1
-one
+# Universe
+The universe
 
-# feature 2
-two
+## Galaxies
 
-# feature 3
-three
+### Milky Way
+Our galaxy
 
-# feature 4
-four
+#### Solar Systems
+
+##### Our solar system
+We are here
+
+### Andromeda
+Another galaxy
