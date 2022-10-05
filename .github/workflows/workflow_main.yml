@@ -1,0 +1,17 @@
+name: Workflow Main
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  #call-workflow:
+    #uses: octo-org/example-repo/.github/workflows/workflow-A.yml@v1
+
+  call-workflow-passing-data:
+    uses: octo-org/example-repo/.github/workflows/workflow-child1.yml@main
+    with:
+      username: mona
+    secrets:
+      token: ${{ secrets.TOKEN }}
