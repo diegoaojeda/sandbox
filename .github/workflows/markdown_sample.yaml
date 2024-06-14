@@ -1,16 +1,20 @@
 name: Markdown Sample
 
 on:
-  - push
+  push:
+    branches:
+      - main
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Lint markdown
         run: |
           pwd
           ls -l
+          env | grep GITHUB
           #docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
 
   deploy:
