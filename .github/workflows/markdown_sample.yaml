@@ -3,6 +3,7 @@ name: Markdown Sample
 
 # Pipeline triggers
 on:
+  push:
   # Trigger the pipeline on pushes to the main branch
   pull_request:
     branches-ignore:
