@@ -12,5 +12,5 @@ Our galaxy
 #### Solar Systems
 
 ##### Our solar system
-We are here
+We are here too
 
