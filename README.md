@@ -14,5 +14,3 @@ Our galaxy
 ##### Our solar system
 We are here
 
-### Andromeda
-Another galaxy
