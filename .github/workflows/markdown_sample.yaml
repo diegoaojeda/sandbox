@@ -7,8 +7,6 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
       - name: Lint markdown
         run: |
           docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
