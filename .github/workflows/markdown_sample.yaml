@@ -19,7 +19,7 @@ jobs:
           pwd
           ls -l
           docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
-  # TODO Set up AWS credentials (use Github secrets as environment variables)
-  - run: echo "Run commands here"
-  # TODO Shell into the EC2 instance, upload the file, and restart service
-  - run: echo "Run commands here"
+      # TODO Set up AWS credentials (use Github secrets as environment variables)
+      - run: echo "Run commands here"
+      # TODO Shell into the EC2 instance, upload the file, and restart service
+      - run: echo "Run commands here"
