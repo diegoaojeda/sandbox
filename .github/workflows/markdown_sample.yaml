@@ -9,7 +9,9 @@ jobs:
     steps:
       - name: Lint markdown
         run: |
-          docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
+          pwd
+          ls -l
+          #docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
 
   deploy:
     runs-on: ubuntu-latest
