@@ -4,10 +4,13 @@ name: Markdown Sample
 # Pipeline triggers
 on:
   push:
-  # Trigger the pipeline on pushes to the main branch
-  pull_request:
     branches-ignore:
       - main
+  # Trigger the pipeline on pushes to the main branch
+  pull_request:
+    branches:
+      - main
+    
 
 # Define jobs to run in parallel
 jobs:
