@@ -15,7 +15,7 @@ jobs:
           pwd
           ls -l
           env | grep GITHUB
-          #docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
+          docker run -v $PWD/README.md:/app/README.md -w /app pipelinecomponents/markdownlint README.md
 
   deploy:
     runs-on: ubuntu-latest
